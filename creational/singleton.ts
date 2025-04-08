@@ -1,23 +1,24 @@
-class Singleton {
-  private static instance: Singleton;
+class Logger {
+  private static instance: Logger;
 
   private constructor() {
-    if (Singleton.instance) {
-      throw new Error("Use Singleton.getInstance() to get the instance of this class.");
+    if (Logger.instance) {
+      throw new Error(
+        "Error: Instantiation failed: Use Logger.getInstance() instead of new."
+      );
     }
 
-    Singleton.instance = this;
+    Logger.instance = this;
   }
 
-  public static getInstance(): Singleton {
-    if (!Singleton.instance) {
-      Singleton.instance = new Singleton();
+  public static getInstance(): Logger {
+    if (!Logger.instance) {
+      Logger.instance = new Logger();
     }
-
-    return Singleton.instance;
+    return Logger.instance;
   }
 }
 
-const singleton1 = Singleton.getInstance();
-const singleton2 = Singleton.getInstance();
-console.log(singleton1 === singleton2);
+const logger1 = Logger.getInstance();
+const logger2 = Logger.getInstance();
+console.log(logger1 === logger2);
