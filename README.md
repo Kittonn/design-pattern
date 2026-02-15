@@ -15,11 +15,18 @@
 - Composite
 - Decorator
 - Facade
+- Flyweight
+- Proxy
 
 ## Behavioral
 
-- Strategy
-- Observer
+- Chain of Responsibility
 - Command
+- Iterator
+- Mediator
+- Memento
+- Observer
 - State
+- Strategy
 - Template Method
+- Visitor
