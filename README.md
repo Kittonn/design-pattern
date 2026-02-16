@@ -10,11 +10,11 @@
 
 ## Structural
 
-- Adapter
+- [Adapter](./structural/adapter/)
 - Bridge
 - Composite
 - Decorator
-- Facade
+- [Facade](./structural/facade/)
 - Flyweight
 - Proxy
 
